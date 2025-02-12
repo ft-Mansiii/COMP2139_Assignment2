@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Assignment01.Models.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create")">Create New Category</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Category Name</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.CategoryName</td>
+            <td>@category.CategoryDescription</td>
+            <td>
+                <a href="@Url.Action("Details", new { id = category.CategoryId })" class="btn btn-info">Details</a>
+                <a href="@Url.Action("Edit", new { id = category.CategoryId })" class="btn btn-warning">Edit</a>
+                <a href="@Url.Action("Delete", new { id = category.CategoryId })" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

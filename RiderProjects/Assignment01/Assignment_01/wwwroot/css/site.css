@@ -1,0 +1,208 @@
+/* Base styles */
+html {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  overflow: hidden;
+  padding-top: 60px; /* Space for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #48c9b0; /* Pastel green */
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure navbar is always on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #81e4d9; /* Soft pastel blue */
+}
+
+/* Main content */
+h1 {
+  font-size: 3rem;
+  color: #48c9b0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 100px 0 20px; /* Adjusted for space under navbar */
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #81e4d9;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #48c9b0;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background-color: #48c9b0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px 3px rgba(72, 201, 176, 0.5);
+}
+
+/* Form */
+.form-floating {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.form-floating > .form-control {
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: 2px solid #48c9b0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form-floating > .form-control:focus {
+  border-color: #81e4d9;
+  box-shadow: 0 0 5px rgba(129, 228, 217, 0.4);
+  outline: none;
+}
+
+.form-floating > .form-control::placeholder {
+  color: #a3b8b2;
+}
+
+/* Footer */
+footer {
+  background-color: #48c9b0;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #81e4d9;
+}
+
+a {
+  text-decoration: none;
+  color: #48c9b0;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #81e4d9;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .form-floating > .form-control {
+    padding: 10px 12px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .form-floating > .form-control {
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,31 @@
+﻿@model List<Assignment01.Models.Product>
+
+<h2>Hurray!!!! Your order has been placed</h2>
+<br>
+<br>
+<br>
+<h2>Order Summary</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Quantity Ordered</th>
+        <th>Unit Price</th>
+        <th>Total Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in Model.Where(p => p.QuantityToOrder > 0))
+    {
+        <tr>
+            <td>@product.ProductName</td>
+            <td>@product.QuantityToOrder</td>
+            <td>@product.Price.ToString("C")</td>
+            <td>@(product.QuantityToOrder * product.Price)</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h3>Total: @Model.Where(p => p.QuantityToOrder > 0).Sum(p => p.QuantityToOrder * p.Price).ToString("C")</h3>
