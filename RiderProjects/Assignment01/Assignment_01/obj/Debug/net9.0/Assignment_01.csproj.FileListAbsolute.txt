@@ -196,4 +196,5 @@ C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\refint\
 C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\Assignment_01.pdb
 C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\Assignment_01.genruntimeconfig.cache
 C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\ref\Assignment_01.dll
-C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\compressed\v28x8ovrxy-3s82rcwoug.gz
+C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\Assignment_01.sourcelink.json
+C:\Users\chhil\RiderProjects\Assignment01\Assignment_01\obj\Debug\net9.0\compressed\v28x8ovrxy-sl78veb4ln.gz

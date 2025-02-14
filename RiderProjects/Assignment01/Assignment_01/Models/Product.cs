@@ -7,12 +7,13 @@ namespace Assignment01.Models
     public class Product
     {
         
+        // nav property !
         public Category Category { get; set; }
-        [Key]
+        [Key]  
         public int ProductId { get; set; }
         
         [Required] [MinLength(5)] 
-        public string ProductName { get; set; }
+        public string ProductName { get; set; } 
         
         public int? CategoryId { get; set; }
         [Required]

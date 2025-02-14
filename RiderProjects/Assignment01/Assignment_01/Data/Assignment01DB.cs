@@ -29,12 +29,12 @@ namespace Assignment01.Data
                 .HasOne(p => p.Product)
                 .WithMany(c => c.OrderItems)
                 .HasForeignKey(p => p.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Cascade);      
 
             modelBuilder.Entity<OrderItem>()
                 .HasOne(o => o.Order)
                 .WithMany(c => c.OrderItems)
-                .HasForeignKey(p => p.OrderId)
+                .HasForeignKey(p => p.OrderId)        
                 .OnDelete(DeleteBehavior.Cascade);
 
             

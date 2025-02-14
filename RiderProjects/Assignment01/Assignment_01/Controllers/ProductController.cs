@@ -62,7 +62,7 @@ public class ProductController : Controller
             TempData["Message"] = "No products found.";
         }
 
-        return View(products);
+        return View(products);   
     }
 
 
