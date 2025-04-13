@@ -1,0 +1,56 @@
+[2025-04-12 20:55:50 INF] Starting up the application {"Application":"Assignment01"}
+[2025-04-12 20:55:52 INF] User Anonymous accessed endpoint / at "2025-04-13T00:55:52.9539024Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /Identity/Account/Login at "2025-04-13T00:55:53.0246660Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:55:53.2210035Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:55:53.2210789Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:55:53.2216158Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:55:53.2217297Z" {"Application":"Assignment01"}
+[2025-04-12 20:55:53 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:55:53.2219413Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /Identity/Account/Login at "2025-04-13T00:56:01.2182081Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint / at "2025-04-13T00:56:01.6086650Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:01.7073034Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:01.7074490Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:01.7079883Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:01.7080658Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:01 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:01.7083939Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /Management/Product/Search at "2025-04-13T00:56:04.2238636Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:04.4173059Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:04.4173091Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:04.4173431Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:04.4173662Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:04.4174060Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:04 INF] User Anonymous accessed endpoint /js/productManagement.js at "2025-04-13T00:56:04.4175943Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:08 INF] User Anonymous accessed endpoint /api/ProductSearch/SearchFilter/ at "2025-04-13T00:56:08.1525773Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:08 INF] User admin@gmail.com made an AJAX search at "2025-04-12T20:56:08.2785448-04:00" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /Management/Product/Index at "2025-04-13T00:56:15.7203071Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User admin@gmail.com accessed the Product Index page at "2025-04-12T20:56:15.7351392-04:00" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:15.8210927Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:15.8210930Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:15.8212752Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:15.8214016Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:15.8213924Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:15 INF] User Anonymous accessed endpoint /js/placeOrder.js at "2025-04-13T00:56:15.8214577Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:18 INF] User Anonymous accessed endpoint /Management/Product/UpdateStock at "2025-04-13T00:56:18.5293241Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:22 INF] User Anonymous accessed endpoint /Management/Product/UpdateStock at "2025-04-13T00:56:22.7432385Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /Management/Order/Index at "2025-04-13T00:56:28.3570238Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User admin@gmail.com accessed Order Index at "2025-04-13T00:56:28.3818093Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:28.4327343Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:28.4327548Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:28.4327389Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:28.4328130Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:28 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:28.4327949Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /Management/Product/Search at "2025-04-13T00:56:30.3109350Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:30.3345290Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:30.3345404Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:30.3346544Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:30.3346597Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:30.3347202Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:30 INF] User Anonymous accessed endpoint /js/productManagement.js at "2025-04-13T00:56:30.3347284Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /Management/Product/Index at "2025-04-13T00:56:32.1098738Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User admin@gmail.com accessed the Product Index page at "2025-04-12T20:56:32.1147927-04:00" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /css/site.css at "2025-04-13T00:56:32.1356223Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/css/bootstrap.min.css at "2025-04-13T00:56:32.1356223Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /lib/jquery/dist/jquery.min.js at "2025-04-13T00:56:32.1356998Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /lib/bootstrap/dist/js/bootstrap.bundle.min.js at "2025-04-13T00:56:32.1357287Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /js/site.js at "2025-04-13T00:56:32.1358001Z" {"Application":"Assignment01"}
+[2025-04-12 20:56:32 INF] User Anonymous accessed endpoint /js/placeOrder.js at "2025-04-13T00:56:32.1359286Z" {"Application":"Assignment01"}
