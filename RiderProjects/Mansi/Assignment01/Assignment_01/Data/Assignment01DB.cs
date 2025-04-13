@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Assignment01.Data;
 
-public class Assignment01DB : IdentityDbContext<Account>
+public class Assignment01Db : IdentityDbContext<Account>
 {
-    public Assignment01DB(DbContextOptions<Assignment01DB> options)
+    public Assignment01Db(DbContextOptions<Assignment01Db> options)
         : base(options)
     {
     }

@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Assignment01.Migrations
 {
-    [DbContext(typeof(Assignment01DB))]
-    partial class Assignment01DBModelSnapshot : ModelSnapshot
+    [DbContext(typeof(Assignment01Db))]
+    partial class Assignment01DbModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,7 @@ namespace Assignment01.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Assignment01.Models.Account", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Account", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("text");
@@ -101,7 +101,7 @@ namespace Assignment01.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Category", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -123,7 +123,7 @@ namespace Assignment01.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Order", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Order", b =>
                 {
                     b.Property<int>("OrderId")
                         .ValueGeneratedOnAdd()
@@ -146,7 +146,7 @@ namespace Assignment01.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.OrderItem", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.OrderItem", b =>
                 {
                     b.Property<int>("OrderItemId")
                         .ValueGeneratedOnAdd()
@@ -175,7 +175,7 @@ namespace Assignment01.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Product", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -288,10 +288,12 @@ namespace Assignment01.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("text");
@@ -328,10 +330,12 @@ namespace Assignment01.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("text");
@@ -341,15 +345,15 @@ namespace Assignment01.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Assignment01.Models.OrderItem", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.OrderItem", b =>
                 {
-                    b.HasOne("Assignment01.Models.Order", "Order")
+                    b.HasOne("Assignment01.Areas.Management.Models.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Assignment01.Models.Product", "Product")
+                    b.HasOne("Assignment01.Areas.Management.Models.Product", "Product")
                         .WithMany("OrderItems")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -360,9 +364,9 @@ namespace Assignment01.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Product", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Product", b =>
                 {
-                    b.HasOne("Assignment01.Models.Category", "Category")
+                    b.HasOne("Assignment01.Areas.Management.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId");
 
@@ -380,7 +384,7 @@ namespace Assignment01.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Assignment01.Models.Account", null)
+                    b.HasOne("Assignment01.Areas.Management.Models.Account", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -389,7 +393,7 @@ namespace Assignment01.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Assignment01.Models.Account", null)
+                    b.HasOne("Assignment01.Areas.Management.Models.Account", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -404,7 +408,7 @@ namespace Assignment01.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Assignment01.Models.Account", null)
+                    b.HasOne("Assignment01.Areas.Management.Models.Account", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -413,24 +417,24 @@ namespace Assignment01.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Assignment01.Models.Account", null)
+                    b.HasOne("Assignment01.Areas.Management.Models.Account", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Category", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Category", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Order", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Order", b =>
                 {
                     b.Navigation("OrderItems");
                 });
 
-            modelBuilder.Entity("Assignment01.Models.Product", b =>
+            modelBuilder.Entity("Assignment01.Areas.Management.Models.Product", b =>
                 {
                     b.Navigation("OrderItems");
                 });

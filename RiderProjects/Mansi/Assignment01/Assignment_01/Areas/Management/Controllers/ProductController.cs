@@ -13,9 +13,9 @@ namespace Assignment01.Areas.Management.Controllers;
 [Authorize]
 public class ProductController : Controller
 {
-    private readonly Assignment01DB _context;
+    private readonly Assignment01Db _context;
 
-    public ProductController(Assignment01DB context)
+    public ProductController(Assignment01Db context)
     {
         _context = context;
     }

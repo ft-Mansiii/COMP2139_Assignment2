@@ -12,9 +12,9 @@ namespace Assignment01.Areas.Management.Controllers;
 [Authorize(Roles = "Admin")]
 public class CategoryController : Controller
 {
-    private readonly Assignment01DB _context;
+    private readonly Assignment01Db _context;
 
-    public CategoryController(Assignment01DB context)
+    public CategoryController(Assignment01Db context)
     {
         _context = context;
     }

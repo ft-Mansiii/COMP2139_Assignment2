@@ -10,11 +10,11 @@ namespace Assignment01.Areas.Management.Controllers;
 [Authorize]
 public class OrderController : Controller
 {
-    private readonly Assignment01DB _context;
+    private readonly Assignment01Db _context;
     private readonly ILogger<OrderController> _logger;
 
 
-    public OrderController(Assignment01DB context, ILogger<OrderController> logger)
+    public OrderController(Assignment01Db context, ILogger<OrderController> logger)
     {
         _context = context;
     }

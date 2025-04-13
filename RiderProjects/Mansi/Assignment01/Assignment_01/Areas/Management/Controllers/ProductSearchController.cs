@@ -9,9 +9,9 @@ namespace Assignment01.Areas.Management.Controllers;
 [Route("api/[controller]/[action]")]
 public class ProductSearchController : Controller
 {
-    private readonly Assignment01DB _context;
+    private readonly Assignment01Db _context;
 
-    public ProductSearchController(Assignment01DB context)
+    public ProductSearchController(Assignment01Db context)
     {
         _context = context;
     }

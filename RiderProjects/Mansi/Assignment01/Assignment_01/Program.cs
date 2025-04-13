@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 // Add services to the container.
-builder.Services.AddDbContext<Assignment01DB>(options =>
+builder.Services.AddDbContext<Assignment01Db>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
@@ -33,7 +33,7 @@ builder.Services.AddDefaultIdentity<Account>(options =>
         options.Password.RequiredLength = 6;
     })
     .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<Assignment01DB>();
+    .AddEntityFrameworkStores<Assignment01Db>();
 
 
 // Add MVC
