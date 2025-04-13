@@ -1,0 +1,37 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "Delete Product";
+    Layout = "_Layout";
+}
+
+
+
+<h2>Delete Product</h2>
+
+<h3>Are you sure you want to delete this product?</h3>
+
+<div>
+    <strong>Product Name:</strong> @Model.ProductName
+</div>
+
+<div>
+    @if (Model.Category != null)
+    {
+        <strong>Category:</strong>
+        @Model.Category.CategoryName
+    }
+    else
+    {
+        <strong>Category:</strong>
+    }
+</div>
+<form asp-action="Delete" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.ProductId"/>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>
+
+
+
